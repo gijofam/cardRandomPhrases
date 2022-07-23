@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;400;600;700&display=swap');
+
+/*-----Reset-----*/
+*, *::before, *::after{
+    box-sizing: border-box;
+}
+html{
+    font-size: 14px;
+}
+body{
+    font-family: 'Inter', sans-serif;
+    margin:0;
+}
+h1,h2,h3,p{
+    margin-top: 0;
+    margin-bottom: 0;
+}
+img{
+    display: block;
+}
+
+/* -------Component Padre------- */
+.App{
+
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+
+}
+/*-------- TARJETA ---------------*/
+.card{
+    background-color: white;
+    max-width: 550px;
+    /* height: 150px; */
+
+    height: 300px;
+    border: 1px solid rgb(0,0,0,0.3);
+    border-radius: 1em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 5px 5px 20px rgb(0,0,0,0.3);
+    gap:1rem ;
+    padding: 1em;
+    /* overflow-wrap:break-word; */
+}
+
+.card-container{
+    display: flex;
+    /* justify-content: center;*/
+    align-items: center; 
+    gap: 0.5em;
+}
+.card-container__info{
+    font-size: 1.5rem;
+}
+.card-container__icon{
+    font-size: 4rem;
+}
+.card__icon{
+    align-self: flex-end;
+    font-size: 3.5rem;
+
+}
+.card__icon:hover{
+    box-shadow: 5px 5px 20px rgb(0,0,0,0.3);
+    transform: translateY(-3%);
+    transition: all 400ms ease;
+    cursor: pointer;
+}
+.card__info{
+    align-self: flex-end;
+    font-size: 1.5rem;
+
+}
