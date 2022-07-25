@@ -60,9 +60,14 @@ img{
     font-size: 4rem;
 }
 .card__icon{
+    width: 1em;
+    height: 1em;
     align-self: flex-end;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     font-size: 3.5rem;
-
+    border-radius: 50%;
 }
 .card__icon:hover{
     box-shadow: 5px 5px 20px rgb(0,0,0,0.3);
