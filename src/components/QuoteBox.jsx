@@ -1,6 +1,8 @@
 import React from 'react'
+import QuoteButton from './QuoteButton'
 
 const QuoteBox = ({randomQuote,chamgeRandomQuote,color}) => {
+// const QuoteBox = ({randomQuote,color}) => {
   return (
     <div>
       <article className='card ' style={{color:`${color}`}}>
@@ -9,7 +11,10 @@ const QuoteBox = ({randomQuote,chamgeRandomQuote,color}) => {
         <p className='card-container__info'>{randomQuote.quote}</p>
       </div>
       <p className='card__info'>{randomQuote.author}</p>
-      <i onClick={chamgeRandomQuote} className='bx bxs-skip-next-circle card__icon'> </i>
+  
+      <QuoteButton chamgeRandomQuote={chamgeRandomQuote}/>
+      
+      {/* <i onClick={chamgeRandomQuote} className='bx bxs-skip-next-circle card__icon'> </i> */}
      </article>
     </div>
   )

@@ -31,6 +31,7 @@ function App() {
   return (
     <div className="App" style={{backgroundColor:`${color}`}} >
       <QuoteBox randomQuote={randomQuote} chamgeRandomQuote={chamgeRandomQuote} color ={color}  />
+     
      {/* <article className='card ' style={{color:`${randomColor}`}}>
       <div className='card-container'>
         <i className='bx bxs-quote-left card-container__icon'></i>
